@@ -273,15 +273,140 @@ summary {
 /*--------------------*\
 # FONT
 \*--------------------*/
+.container-card {
+  background-color: #252d37;
+  max-width: 350px;
+  padding: 30px;
+  border-radius: 8%;
+}
+.container-card .container-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3a4655;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7c8798;
+}
+.container-card h1 {
+  color: white;
+  font-weight: 700;
+  font-size: x-large;
+}
+.container-card p {
+  color: #7c8798;
+}
+.container-card section {
+  display: flex;
+  justify-content: space-between;
+}
+.container-card article {
+  display: flex;
+  flex-direction: column;
+}
+.container-card article img {
+  max-width: 150px;
+  align-self: center;
+}
+.container-card article .result {
+  border-radius: 50rem;
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: #fb7413;
+  background-color: #3a4655;
+  align-self: center;
+}
+.container-card article h1 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.container-card article p {
+  text-align: center;
+}
+
 body {
   font-family: "Overpass", sans-serif;
-  min-height: 100vh;
+  font-weight: 400;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 10px;
 }
 .attribution a {
   color: #3e52a3;
+}
+
+.color-primary {
+  color: #fb7413;
+}
+
+.color-secondary {
+  color: #7c8798;
+}
+
+p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.container {
+  background-color: #121417;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-circle--selected, .btn-circle, .btn-primary {
+  display: inline-block;
+  border: none;
+  border-radius: 50rem;
+  padding: 10px 20px;
+  margin-top: 20px;
+  min-width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.btn-circle--selected:hover, .btn-circle:hover, .btn-primary:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #fb7413;
+  color: white;
+}
+.btn-primary:hover {
+  color: #fb7413;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn-circle, .btn-circle--selected {
+  margin-top: 0;
+  min-width: auto;
+  font-weight: 400;
+  width: 40px;
+  height: 40px;
+  background-color: #3a4655;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7c8798;
+}
+.btn-circle:hover, .btn-circle--selected:hover {
+  background-color: #959eac;
+  color: white;
+}
+
+.btn-circle--selected {
+  background-color: #fb7413;
+  color: white;
+}
+.btn-circle--selected:hover {
+  background-color: #fb7413;
+  color: white;
 }

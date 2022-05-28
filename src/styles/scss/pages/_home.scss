@@ -1,0 +1,67 @@
+@use "../abstracts/variables";
+
+.container-card {
+    background-color: variables.$color-dark-blue;
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 8%;
+
+    .container-circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: lighten(variables.$color-dark-blue, 10%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: variables.$color-medium-grey;
+    }
+
+    h1 {
+        color: variables.$color-white;
+        font-weight: variables.$font-weight-bold;
+        font-size: x-large;
+    }
+
+    p {
+        color: variables.$color-medium-grey;
+    }
+
+    & section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    & article {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            max-width: 150px;
+            align-self: center;
+        }
+
+        .result {
+            border-radius: 50rem;
+            padding: 10px 20px;
+            margin-top: 20px;
+            color: variables.$color-orange;
+            background-color: lighten(
+                $color: variables.$color-dark-blue,
+                $amount: 10%
+            );
+            align-self: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin: {
+                bottom: 0;
+            }
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+}
