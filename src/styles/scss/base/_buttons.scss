@@ -1,0 +1,61 @@
+@use "../abstracts/variables";
+
+%btn {
+    display: inline-block;
+    border: none;
+    border-radius: 50rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+    min-width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn-primary {
+    @extend %btn;
+    background-color: variables.$color-orange;
+    color: variables.$color-white;
+
+    &:hover {
+        color: variables.$color-orange;
+        background-color: variables.$color-white;
+        cursor: pointer;
+    }
+}
+
+.btn-circle {
+    @extend %btn;
+
+    margin-top: 0;
+    min-width: auto;
+    font-weight: variables.$font-weight-regular;
+    width: 40px;
+    height: 40px;
+    background-color: lighten(variables.$color-dark-blue, 10%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: variables.$color-medium-grey;
+
+    &:hover {
+        background-color: variables.$color-light-grey;
+        color: variables.$color-white;
+    }
+}
+
+.btn-circle--selected {
+    @extend %btn;
+    @extend .btn-circle;
+
+    background-color: variables.$color-orange;
+    color: variables.$color-white;
+
+    &:hover {
+        background-color: variables.$color-orange;
+        color: variables.$color-white;
+    }
+}

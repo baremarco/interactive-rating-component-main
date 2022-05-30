@@ -1,0 +1,10 @@
+@use "../abstracts/variables";
+
+.container {
+    background-color: variables.$color-very-dark-blue;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

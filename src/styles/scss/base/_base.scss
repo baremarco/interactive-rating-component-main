@@ -1,0 +1,31 @@
+@use "../abstracts/variables";
+
+body {
+    font-family: variables.$font-stack;
+    font-weight: variables.$font-weight-regular;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: {
+        top: 10px;
+    }
+
+    a {
+        color: variables.$color-footer-blue;
+    }
+}
+
+.color-primary {
+    color: variables.$color-orange;
+}
+
+.color-secondary {
+    color: variables.$color-medium-grey;
+}
+
+p {
+    font-size: variables.$font-size-paragraph;
+    line-height: 20px;
+}
