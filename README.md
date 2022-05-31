@@ -67,6 +67,7 @@ Users should be able to:
 ### Useful resources
 
 -   [resource 1](https://css-tricks.com/a-complete-guide-to-links-and-buttons/) - This helped me for style buttons
+-   [fix create react app showing readme](https://www.pluralsight.com/guides/fix-create-react-app-showing-readme.md) - This helped me to fix that on the github pages I was displaying the content of readme.md instead of the application.
 
 ## Author
 
@@ -79,3 +80,4 @@ Users should be able to:
 -   Thanks to [Raymond Adutwum Agyei](https://www.frontendmentor.io/profile/alosoft).
 -   Thanks to [Abdul](https://www.frontendmentor.io/profile/Samadeen).
 -   Thanks to [Vanza Setia](https://www.frontendmentor.io/profile/vanzasetia).
+-   Thanks to [Desmond Nyamador](https://www.pluralsight.com/guides/fix-create-react-app-showing-readme.md).
