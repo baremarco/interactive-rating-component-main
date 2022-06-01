@@ -68,6 +68,9 @@ Users should be able to:
 
 -   [resource 1](https://css-tricks.com/a-complete-guide-to-links-and-buttons/) - This helped me for style buttons
 -   [fix create react app showing readme](https://www.pluralsight.com/guides/fix-create-react-app-showing-readme.md) - This helped me to fix that on the github pages I was displaying the content of readme.md instead of the application.
+-   You need to install gh-pages globally for this to work
+
+    `npm install -g --save-dev gh-pages`
 
 ## Author
 
