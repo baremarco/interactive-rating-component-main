@@ -1,11 +1,15 @@
 import React from "react";
 
 function ThanksCard({ selectedRate, maxRate }) {
+    console.log(process.env.PUBLIC_URL + "/images/illustration-thank-you.svg");
     return (
         <section className="container-card">
             <article>
                 <img
-                    src="../../images/illustration-thank-you.svg"
+                    src={
+                        process.env.PUBLIC_URL +
+                        "/images/illustration-thank-you.svg"
+                    }
                     alt="card, voucher and orange ball cartoon"
                 />
                 <span className="result">

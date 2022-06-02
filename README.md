@@ -56,6 +56,17 @@ Users should be able to:
 -   Learned **css flexbox**
 -   Learned about **markdown** syntax
 -   Learned **React functional components**
+-   Learned how to reference in React an image inside the public folder
+    ```
+        <img
+            src={
+                process.env.PUBLIC_URL +
+                "/images/illustration-thank-you.svg"
+            }
+            alt="card, voucher and orange ball cartoon"
+        />
+    ```
+-   Learned how to publish in GitHubPages a react project
 
 ### Continued development
 
@@ -67,10 +78,12 @@ Users should be able to:
 ### Useful resources
 
 -   [resource 1](https://css-tricks.com/a-complete-guide-to-links-and-buttons/) - This helped me for style buttons
--   [fix create react app showing readme](https://www.pluralsight.com/guides/fix-create-react-app-showing-readme.md) - This helped me to fix that on the github pages I was displaying the content of readme.md instead of the application.
+-   [fix create react app showing readme](https://www.pluralsight.com/guides/fix-create-react-app-showing-readme.md) - This helped me to fix that on the github pages was displayed the content of readme.md instead of the application.
 -   You need to install gh-pages globally for this to work
 
     `npm install -g --save-dev gh-pages`
+
+-   [guide to use GitHubPages in React projects a second aproach](https://platzi.com/tutoriales/1548-react/4065-guia-para-usar-github-pages-en-tus-proyectos-de-reactjs/)
 
 ## Author
 
