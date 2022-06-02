@@ -67,6 +67,12 @@ Users should be able to:
         />
     ```
 -   Learned how to publish in GitHubPages a react project
+-   Learned how to reset origin master to a commit
+    ```
+        git checkout main
+        git reset --hard e3f1e37
+        git push --force origin e3f1e37:main
+    ```
 
 ### Continued development
 
@@ -83,7 +89,8 @@ Users should be able to:
 
     `npm install -g --save-dev gh-pages`
 
--   [guide to use GitHubPages in React projects a second aproach](https://platzi.com/tutoriales/1548-react/4065-guia-para-usar-github-pages-en-tus-proyectos-de-reactjs/)
+-   [guide to use GitHubPages in React projects a second aproach](https://platzi.com/tutoriales/1548-react/4065-guia-para-usar-github-pages-en-tus-proyectos-de-reactjs/) - This was the final solution to the previous point
+-   [Git, How to reset origin/master to a commit?](https://stackoverflow.com/questions/17667023/git-how-to-reset-origin-master-to-a-commit) - This help me for repair my origin main branch because in the process of deploying my code in GitHubPage I mess it up
 
 ## Author
 
